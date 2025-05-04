@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact • Loyd Truita</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contact-style.css">
+  <link rel="stylesheet" href="../css/contact-footer.css">
+  <link rel="stylesheet" href="../css/splash.css">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/appear-animation.css">
+
+  <!-- Scripts -->
+  <script src="../js/splash-transition.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body class="contact-body">
+  <div class="splashCurtain"></div>
+  <!-- Splash Intro -->
+  <div class="intro">
+    <h1 class="logo-header">
+      <span class="logo">•</span>
+      <span class="logo">Contact</span>
+    </h1>
+  </div>
+
+   <!-- Header -->
+   <header>
+    <div class="header-logo">
+      <p class="header-logo-p1"><a onclick="showTransitionSplashToHome()">&copy; Code by Sonny</a></p>
+    </div>
+    <div class="nav-container">
+      <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav_links">
+          <li><a onclick="showTransitionSplash('work')">Work</a></li>
+          <li><a onclick="showTransitionSplash('about')">About</a></li>
+          <li><a onclick="showTransitionSplash('contact')">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section1">
+      <!-- Contact Form -->
+      <div class="input-details">
+        <h1>Let's start a <br>project together</h1>
+
+        <div class="input-container">
+          <hr>
+          <div><label><p>01</p>What's your name?</label></div>
+          <input type="text" placeholder="John Doe *">
+          <span><span>•</span>Please enter a valid name</span>
+        </div>
+
+        <div class="input-container">
+          <hr>
+          <div><label><p>02</p>What's your email?</label></div>
+          <input type="text" placeholder="john@Doe.com *">
+          <span><span>•</span>Please enter a valid email address</span>
+        </div>
+
+        <div class="input-container">
+          <hr>
+          <div><label><p>03</p>What's the name of your organization?</label></div>
+          <input type="text" placeholder="John & Doe *">
+        </div>
+
+        <div class="input-container">
+          <hr>
+          <div><label><p>04</p>What service are you looking for?</label></div>
+          <input type="text" placeholder="Web design, Web Development ...*">
+        </div>
+
+        <div class="input-container">
+          <hr>
+          <div><label><p>05</p>Your message</label></div>
+          <textarea placeholder="Hello Loyd, can you help me with ... *"></textarea>
+          <span><span>•</span>Please enter a text between 3 and 3000 characters</span>
+        </div>
+
+        <hr>
+
+        <div class="send-circle-container">
+          <button class="send-circle">
+            <p class="p-send">Send</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- My Details -->
+      <div class="my-details">
+        <img class="profile" src="../images/profile/profile2.png" alt="Profile">
+        <img class="arrow" src="../images/right-arrow.png" alt="Arrow">
+
+        <p class="details-header">CONTACT DETAILS</p>
+        <p class="details">xcodesonic@gmail.com</p>
+        <p class="details">+63 921 365 2361</p>
+
+        <p class="details-header">BUSINESS DETAILS</p>
+        <p class="details">Loyd Truita XCode</p>
+        <p class="details">CoC: 92411711</p>
+        <p class="details">VAT: NL866034080B01</p>
+        <p class="details">Location: Philippines</p>
+
+        <p class="details-header">SOCIALS</p>
+        <p class="details">Facebook</p>
+        <p class="details">Instagram</p>
+        <p class="details">Twitter</p>
+        <p class="details">Telegram</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-info2">
+      <div class="info1">
+        <p>VERSION</p>
+        <p>LOCAL TIME</p>
+        <p>2025 &copy; Edition</p>
+        <p>GMT +8</p>
+      </div>
+      <div class="info2">
+        <div class="social-title">
+          <p>SOCIALS</p>
+        </div>
+        <div class="socials">
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Twitter</p>
+          <p>Telegram</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button id="floating-menu" onclick="toggleMenu()">
+    <div class="icon">
+     <img src="/assets/images/icons/arrow-up.png" alt="">
+    </div>
+  </button>
+  <!-- Scripts -->
+  <script src="../js/contact-button-hover-animation.js"></script>
+</body>
+</html>

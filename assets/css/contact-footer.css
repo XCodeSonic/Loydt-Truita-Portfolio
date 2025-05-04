@@ -1,0 +1,141 @@
+footer{
+  background-color:  #1c1d21;
+  width: 100%;
+  color: #ffffff;
+  padding: 10% 10% 2% 10%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35vh;
+}
+
+
+.footer-info1  .get-in-touch-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  align-self: flex-end;
+  margin: 20px 10% 0 0;
+}
+
+.footer-info1 .get-in-touch-circle-container .get-in-touch-circle{
+  width: 180px;
+  height: 180px;
+  background-color: #3f49df;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: none;
+  transition: transform 0.1s ease 0s;
+}
+
+.footer-info1  .get-in-touch-circle-container p{
+  position: absolute;
+  color: #ffffff;
+  z-index: 1;
+  font-size: 1.5em;
+  transition: transform 0.1s ease 0s;
+}
+
+
+.footer-info2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info2 .info1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1em;
+}
+
+
+.footer-info2 .info1 p:nth-child(1),
+.footer-info2 .info1 p:nth-child(2){
+  font-size: 0.7em;
+  color: #999d9e;
+  margin-bottom: 1.5em;
+}
+
+.footer-info2 .info2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info2 .info2 .social-title{
+  font-size: 0.7em;
+  color: #999d9e;
+  margin-bottom: 1.5em;
+}
+
+
+.footer-info2 .info2 .socials{
+  display: flex;
+  column-gap: 1em;
+  
+}
+
+.footer-info2 .info2 .socials p {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.footer-info2 .info2 .socials p:hover {
+  transform: translateY(-5px);
+}
+
+
+.send-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin: 5em 10% 0 0;
+}
+
+.send-circle-container .send-circle{
+  width: 180px;
+  height: 180px;
+  background-color: #3f49df;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: none;
+}
+
+.send-circle-container p{
+  margin-left: 4.6rem;
+  font-size: 2em;
+  position: absolute;
+  color: #ffffff;
+  z-index: 1;
+}
+
+
+.send-circle-container .send-circle::before {
+  content: '';
+  position: absolute;
+  top: var(--y); 
+  left: var(--x);
+  width: 0em; 
+  height: 0em;
+  background-color: #2630be;
+  transition: width 0.5s, height 0.5s;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.send-circle-container .send-circle:hover::before {
+  width: 90%;
+  height: 90%;
+}

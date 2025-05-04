@@ -1,0 +1,100 @@
+.section1 {
+  display: flex;
+  justify-content: center;
+  padding: 15% 20% 10% 20%;
+  column-gap: 5em;
+  width: 100vw;
+}
+
+.section1 .input-details{
+  width: 60%;
+  min-width: 60%;
+
+}
+
+.section1 hr {
+  margin: 2em 0 2em 0;
+  border-color: #999d9e;
+}
+
+.section1 h1{
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 4em;
+}
+
+.section1 p {
+  display: inline;
+  margin-right: 3em;
+  color: #999d9e;
+}
+
+.section1 label {
+  color: #ffffff;
+}
+
+.section1 span {
+  margin-right: 6em;
+  color: #e92e2e;
+  font-size: 0.8em;
+}
+ 
+.section1 .my-details{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 40%;
+}
+
+.section1 .my-details .details-header {
+  font-size: 0.7em;
+  color: #999d9e;
+  margin: 6em 0 1em 0;
+}
+
+.section1 .my-details .details {
+  color: #ffffff;
+  font-size: 1em;
+  margin: 0.3em 0 0.3em 0;
+}
+
+.section1 .profile{
+  border-radius: 50%;
+  width: 5em;
+  aspect-ratio: 1;
+  background-color: #999d9e;
+}
+
+.arrow {
+  width: 1.3em;
+  margin-top: 5em;
+  rotate: 45deg;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 .input-container input {
+  padding: 1.5em 0 1.5em 4em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.section1 .input-container textarea {
+  margin: 0.5em;
+  padding: 1.5em 0 1.5em 4em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #ffffff;
+  height: 150px;
+}
+
+
+

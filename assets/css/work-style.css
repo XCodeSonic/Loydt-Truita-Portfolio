@@ -1,0 +1,252 @@
+header .header-logo .header-logo-p1 a {
+  color: #1c1d21;
+  font-size: 1em;
+  font-family: var(--ff-poppins-regular);
+}
+
+header .nav-container .nav_links li a {
+  color: #1c1d21;
+  font-size: 1em;
+}
+
+.section1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;  
+  height: 100vh;
+  background-color: #fafafa;
+  padding: 0 5em 0 5em;
+}
+
+.section1 h1{
+  margin-top: 1em;
+  width: 100%;
+  text-align: left;
+  font-size: 5em;
+  font-weight: 500;
+  line-height: 1em;
+  color:  #1c1d21;
+}
+
+
+.offer-services{
+  width: 100%;
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services{
+  display: flex;
+}
+
+.offer {
+  padding: 1em;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 50px;
+  display: flex;
+  font-size: 1em;
+  justify-content: center;align-items: center;
+  margin: 0 2px 0 2px ;
+}
+
+.offer:nth-child(1) {
+  background-color: #1c1d21;
+  color: white;
+  padding: 1em 2em;
+}
+
+.sort-option{
+  display: flex;
+  padding-right: 5em;
+}
+
+.sort1, .sort2{
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px 0 2px;
+}
+
+.sort1 img, .sort2 img {
+  width: 2em;
+}
+
+.sort1 {
+  background-color: #1c1d21;
+}
+
+.section2{
+  padding: 0 5em 0 5em;
+  margin-top: -3.6em;
+}
+
+.work-header {
+  display: flex;
+  /* justify-content: center; */
+  /* margin-top: 10em; */
+  width: 100%;
+}
+
+.work-header h3{
+  font-weight: 100;
+  color: #8f8f8f;
+  border-bottom: 1px solid  #8f8f8f;
+  font-size: 1em;
+  text-align: left;
+  padding: 0 0 2em 0;
+}
+
+.work-header h3:nth-child(1){
+  width: 41%;
+  padding: 0 0 0 3em;
+}
+
+.work-header h3:nth-child(2){
+  width: 25.5%;
+}
+
+.work-header h3:nth-child(3){
+  width: 6%;
+}
+.work-header h3:nth-child(4){
+  width: 13.5%;
+  text-align: end;
+}
+.work-header h3:nth-child(5){
+  width: 14%;
+  text-align: end;
+  padding: 0 3em 0 0;
+}
+
+.project {
+  display: flex;
+  margin-top: 1em;
+  width: 100%;
+  align-items: center;
+  padding: 0 3em 1em 3em;
+  border-bottom: 1px solid  #8f8f8f;
+  transition: all 0.3s ease;
+}
+
+.project p {
+  transition: transform 0.3s ease;
+}
+
+/* On hover, move first <p> to the left */
+.project:hover p:nth-child(1) {
+  transform: translateX(-1.5em);
+  color: #8f8f8f;
+}
+
+/* On hover, move the rest <p>s to the right */
+.project:hover p:not(:first-child) {
+  transform: translateX(1.5em);
+  color: #8f8f8f;
+}
+
+.project p:nth-child(1){
+  width: 40%;
+  font-size: 2em;
+}
+.project p:nth-child(2){
+  width: 28%;
+  font-weight: 500;
+}
+.project p:nth-child(3){
+  width: 8%;
+  font-weight: 500;
+}
+.project p:nth-child(4){
+  width: 10%;
+  text-align: end;
+  font-weight: 500;
+}
+.project p:nth-child(5){
+  width: 14%;
+  text-align: end;
+  font-weight: 500;
+  color: rgb(7, 168, 42);
+}
+
+
+/* //////////////////////////////// HOVER PROJECT /////////////////////////////////// */
+/* Project Hover Effect */
+/* .project-hover-container {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 1000;
+  display: none;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+} */
+
+.project-hover-container {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 1000;
+  display: none;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), 
+              width 0.4s ease, 
+              height 0.4s ease;
+  will-change: transform;
+}
+
+.project-hover-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(-100%);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-hover-view-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: #3f49df;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Neue Montreal', sans-serif;
+  font-weight: 500;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.project {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.project:hover {
+  color: white;
+  cursor: pointer;
+} 
+

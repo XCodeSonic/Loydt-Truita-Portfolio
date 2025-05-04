@@ -1,0 +1,234 @@
+.appear-ani-1 {
+  animation: appear-ani-1 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.appear-ani-2 {
+  animation: appear-ani-2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.appear-ani-3 {
+  animation: appear-ani-3 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.appear-ani-4 {
+  animation: appear-ani-4 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.appear-ani-5 {
+  animation: appear-ani-5 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.appear-ani-6 {
+  animation: appear-ani-6 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.appear-ani-7 {
+  animation: appear-ani-7 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.appear-ani-9 {
+  animation: appear-ani-9 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+
+@keyframes appear-ani-1 {
+  from{
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+  to{
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes appear-ani-2 {
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appear-ani-3 {
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appear-ani-4 {
+  from{
+    opacity: 0;
+    rotate: 10deg;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    rotate: 0deg;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appear-ani-5 {
+  from{
+    opacity: 0;
+    rotate: -10deg;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    rotate: 0deg;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appear-ani-6 {
+  from{
+    scale: 0.5;
+  }
+  to{
+    scale: 1;
+  }
+}
+
+@keyframes appear-ani-7 {
+  from{
+    rotate: 0deg
+  }
+  to{
+    rotate: 135deg;
+  }
+}
+
+@keyframes appear-ani-8 {
+  from{
+    rotate: 0deg
+  }
+  to{
+    rotate: 135deg;
+  }
+}
+
+@keyframes appear-ani-9{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+.landing-page .profile-name p {
+  width: 1000px;
+  position: absolute;
+  left: max(calc( 1050px * 3), 100%);
+  animation: scrollLeft 20s linear infinite 0s;
+}
+
+.landing-page .profile-name .profile-name1 {
+  animation-delay: calc(20s / 8 * (8 - 1) * -2);
+}
+.landing-page .profile-name .profile-name2 {
+  animation-delay: calc(20s / 8 * (8 - 2) * -2);
+}
+.landing-page .profile-name .profile-name3 {
+  animation-delay: calc(20s / 8 * (8 - 3) * -2) ;
+} 
+.landing-page .profile-name .profile-name4 {
+  animation-delay: calc(20s / 8 * (8 - 4) * -2) ;
+} 
+.landing-page .profile-name .profile-name5 {
+  animation-delay: calc(20s / 8 * (8 - 5) * -2) ;
+} 
+.landing-page .profile-name .profile-name6 {
+  animation-delay: calc(20s / 8 * (8 - 6) * -2) ;
+} 
+.landing-page .profile-name .profile-name7 {
+  animation-delay: calc(20s / 8 * (8 - 7) * -2) ;
+} 
+.landing-page .profile-name .profile-name8 {
+  animation-delay: calc(20s / 8 * (8 - 8) * -2) ;
+} 
+
+@keyframes scrollLeft {
+  to{
+    left: -1000px;
+  }
+}
+
+@keyframes scrollRight {
+  to{
+    left: 1000px;
+  }
+}
+
+.animate-float-up {
+  opacity: 1 !important;
+  padding-top: 6%;
+}
+
+.animate-float-right {
+  opacity: 1 !important;
+  left: 0 !important;
+}
+
+.animate-float-left {
+  opacity: 1 !important;
+  left: 70% !important;
+}
+
+
+.animate-arrow-rotate {
+  opacity: 1 !important;
+  rotate: 45deg !important;
+}
+
+/* //////////////////////////////////////////////////// */
+@keyframes downCurtain{
+
+  0%{
+    height: 50vh;
+    width: 50vw;
+    top: -40vh;
+    border-radius: 50% 50% 50% 50%;
+  }
+  50%{
+    height: 100vh;
+    width: 100vw;
+    top: 0vh;
+    border-radius: 0 0 50% 50%;
+  }
+  100%{
+    height: 120vh;
+    width: 100vw;
+    top: 0vh;
+    border-radius: 0 0 0 0;
+  }
+}

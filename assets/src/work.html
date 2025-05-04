@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work • Loyd Truita</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/splash.css">
+  <link rel="stylesheet" href="../css/work-style.css">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/appear-animation.css">
+
+  <!-- Scripts -->
+  <script src="../js/splash-transition.js" defer></script>
+  <script src="../js/script.js" defer></script>
+  <script src="../js/work-projects.js" defer></script>
+
+</head>
+  <body class="about-body">
+    <div class="splashCurtain"></div>
+    <!-- Splash Intro -->
+    <div class="intro">
+      <h1 class="logo-header">
+        <span class="logo">•</span>
+        <span class="logo">Work</span>
+      </h1>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="header-logo">
+        <p class="header-logo-p1"><a onclick="showTransitionSplashToHome()">&copy; Code by Sonny</a></p>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav_links">
+            <li><a onclick="showTransitionSplash('work')">Work</a></li>
+            <li><a onclick="showTransitionSplash('about')">About</a></li>
+            <li><a onclick="showTransitionSplash('contact')">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section1">
+        <h1>Creating next level <br> digital products</h1>
+        <div class="offer-services">
+          <div class="services">
+            <div class="offer" id="filter-all">
+              <p>All</p>
+            </div>
+            <div class="offer" id="filter-design">
+              <p>Design <sup>35</sup></p>
+            </div>
+            <div class="offer" id="filter-development">
+              <p>Development <sup>1</sup></p>
+            </div>
+            <div class="offer" id="filter-fullpackage">
+              <p>Full Package <sup>2</sup></p>
+            </div>
+            <div class="offer" id="filter-photovideography">
+              <p>Photo & Videography <sup>1</sup></p>
+            </div>
+            <div class="offer" id="filter-tutor">
+              <p>Tutor <sup>2</sup></p>
+            </div>
+          </div>
+          <div class="sort-option">
+            <div class="sort1">
+              <img src="/assets/images/icons/sort-list-white.png" alt="">
+            </div>
+            <div class="sort2">
+              <img src="/assets/images/icons/sort-grid-black.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="work-header">
+          <h3>CLIENT</h3>
+          <h3>LOCATION</h3>
+          <h3>SERVICES</h3>
+          <h3>YEAR</h3>
+          <h3>INCOME</h3>
+        </div>
+        <div id="projects-container"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="curtain"></div>
+
+      <div class="footer-info1">
+        <div class="footer-title">
+          <img src="assets/images/profile/profile.png" alt="Logo">
+          <p class="p1">Let's work</p>
+          <p>together</p>
+        </div>
+        <img class="arrow appear-ani-7" src="assets/images/right-arrow.png" alt="arrow">
+        <div class="get-in-touch-circle-container">
+          <button class="get-in-touch-circle">
+            <p class="p-get-in-touch">Get in touch</p>
+          </button>
+        </div>
+        <hr>
+        <div class="footer-contact">
+          <p>xcodesonic@gmail.com</p>
+          <p>+63 921 365 2361</p>
+        </div>
+      </div>
+      <div class="footer-info2">
+        <div class="info1">
+          <p>VERSION</p>
+          <p>LOCAL TIME</p>
+          <p>2025 &copy; Edition</p>
+          <p>GMT +8</p>
+        </div>
+        <div class="info2">
+          <div class="social-title">
+            <p>SOCIALS</p>
+          </div>
+          <div class="socials">
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>Telegram</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="floating-menu" onclick="toggleMenu()">
+      <div class="icon">
+       <img src="/assets/images/icons/arrow-up.png" alt="">
+      </div>
+    </button>
+  </body>
+</html>

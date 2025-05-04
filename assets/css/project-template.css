@@ -1,0 +1,43 @@
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video-container {
+  position: relative;
+  width: 50em;
+}
+
+.video-container img {
+  width: 100%;
+  display: block;
+  
+}
+
+.video-container video {
+  position: absolute;
+  top: 1%;     /* adjust based on your image */
+  left: 9.8%;    /* adjust based on your image */
+  width: 80.4%;   /* adjust to match screen area */
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px; /* optional for rounded screen look */
+  z-index: -999;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    width: 25em;
+  }
+
+  .video-container video {
+    top: 1%;     /* adjust based on your image */
+    left: 9.8%;    /* adjust based on your image */
+    width: 80.4%;   /* adjust to match screen area */
+    height: 90%;
+  }
+}

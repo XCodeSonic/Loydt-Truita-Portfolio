@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About • Loyd Truita</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/splash.css">
+  <link rel="stylesheet" href="../css/about-style.css">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/appear-animation.css">
+
+  <!-- Scripts -->
+  <script src="../js/splash-transition.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <body class="about-body">
+    <div class="splashCurtain"></div>
+    <!-- Splash Intro -->
+    <div class="intro">
+      <h1 class="logo-header">
+        <span class="logo">•</span>
+        <span class="logo">About</span>
+      </h1>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="header-logo">
+        <p class="header-logo-p1"><a onclick="showTransitionSplashToHome()">&copy; Code by Sonny</a></p>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav_links">
+            <li><a onclick="showTransitionSplash('work')">Work</a></li>
+            <li><a onclick="showTransitionSplash('about')">About</a></li>
+            <li><a onclick="showTransitionSplash('contact')">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section1" id="section1">
+        <h6>Helping brands thrive,<br>in the digital world</h6>
+      </section>
+      <section class="section2">
+        <div class="">
+          <div class="separator"></div>
+        </div>
+        <div class="detail1">
+          <img class="arrow" src="../images/icons/right-arrow-black.png" alt="arrow">
+          <p>I help companies from all over
+            the world with tailor-made
+            solutions. whith each project, I
+            push my work to new horizons,
+            always putting quality first <br><br><b style="color: #999d9e;">Always exploring</b></p>
+          <img class="photo" src="../images/profile/profile.png" alt="">
+        </div>
+      </section>
+      <!-- <section class="section3">
+        <h1>I can help you with</h1>
+        <div class="offer-services">
+          <div>
+            <p class="p1">01</p>
+            <div class="separator"></div>
+            <h2>Design</h2>
+            <p>With a strong eye for aesthetics and creativity, I craft visually compelling designs tailored to your
+              brand or project. From social media graphics and posters to UI layouts and branding kits, I ensure every
+              element communicates your message effectively and professionally.</p>
+          </div>
+          <div>
+            <p class="p1">02</p>
+            <div class="separator"></div>
+            <h2>Development</h2>
+            <p>As a BSIT student from Opol Community College, I specialize in developing responsive, user-friendly
+              websites and applications. Whether you need a sleek personal site, a functional business platform, or an
+              interactive system, I build solutions that are both efficient and modern.</p>
+          </div>
+          <div>
+            <p class="p1">03</p>
+            <div class="separator"></div>
+            <h2>Full Package</h2>
+            <p>Looking for an all-in-one service? I offer a complete package that includes design, development, content
+              creation, and final deployment. This hassle-free solution is perfect for clients who want a streamlined
+              process from concept to completion—all handled in one place.</p>
+          </div>
+          <div>
+            <p class="p1">04</p>
+            <div class="separator"></div>
+            <h2>Photo & Videography</h2>
+            <p>I capture high-quality photos and videos that bring your story to life. Whether it's for events, business
+              promotions, or creative projects, I ensure every shot is framed with purpose and passion, delivering
+              content that connects with your audience.</p>
+          </div>
+          <div>
+            <p class="p1">05</p>
+            <div class="separator"></div>
+            <h2>Photo Manipulation & Video Editing</h2>
+            <p>Transform your raw media into polished masterpieces. With advanced editing techniques, I enhance images
+              and videos to match your vision—whether it's retouching, color grading, adding effects, or creating
+              dynamic sequences for social media or presentations.</p>
+          </div>
+          <div>
+            <p class="p1">06</p>
+            <div class="separator"></div>
+            <h2>Personal Tutor</h2>
+            <p>Learning something new? I offer personal tutoring in areas such as design, development, basic IT, and
+              media editing. My sessions are flexible and tailored to your learning style, perfect for beginners or
+              those looking to sharpen their skills with one-on-one guidance.</p>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="section3">
+        <h1>I can help you with</h1>
+        <div class="offer-services">
+          
+          <!-- Template for Each Service -->
+          <div class="service">
+            <p class="p1">01</p>
+            <div class="separator"></div>
+            <h2>Design</h2>
+            <p class="desc short">
+              With a strong eye for aesthetics and creativity, I craft visually compelling designs tailored to your brand...
+            </p>
+            <p class="desc full">
+              With a strong eye for aesthetics and creativity, I craft visually compelling designs tailored to your
+              brand or project. From social media graphics and posters to UI layouts and branding kits, I ensure every
+              element communicates your message effectively and professionally.
+            </p>
+            <button class="toggle-btn-service" onclick="toggleText(this)">See more</button>
+          </div>
+      
+          <div class="service">
+            <p class="p1">02</p>
+            <div class="separator"></div>
+            <h2>Development</h2>
+            <p class="desc short">
+              I specialize in developing responsive, user-friendly websites and applications for all needs...
+            </p>
+            <p class="desc full">
+              As a BSIT student from Opol Community College, I specialize in developing responsive, user-friendly
+              websites and applications. Whether you need a sleek personal site, a functional business platform, or an
+              interactive system, I build solutions that are both efficient and modern.
+            </p>
+            <button class="toggle-btn-service" onclick="toggleText(this)">See more</button>
+          </div>
+      
+          <div class="service">
+            <p class="p1">03</p>
+            <div class="separator"></div>
+            <h2>Full Package</h2>
+            <p class="desc short">
+              Looking for an all-in-one service? I offer a complete package that includes design, development ...
+            </p>
+            <p class="desc full">
+              Looking for an all-in-one service? I offer a complete package that includes design, development, content
+              creation, and final deployment. This hassle-free solution is perfect for clients who want a streamlined
+              process from concept to completion—all handled in one place.
+            </p>
+            <button class="toggle-btn-service" onclick="toggleText(this)">See more</button>
+          </div>
+
+          <div class="service">
+            <p class="p1">04</p>
+            <div class="separator"></div>
+            <h2>Photo & Videography</h2>
+            <p class="desc short">
+              I capture high-quality photos and videos that bring your story to life. Whether it's for events, business ...
+            </p>
+            <p class="desc full">
+              I capture high-quality photos and videos that bring your story to life. Whether it's for events, business
+              promotions, or creative projects, I ensure every shot is framed with purpose and passion, delivering
+              content that connects with your audience.
+            </p>
+            <button class="toggle-btn-service" onclick="toggleText(this)">See more</button>
+          </div>
+          
+          <div class="service">
+            <p class="p1">05</p>
+            <div class="separator"></div>
+            <h2>Photo Manipulation & Video Editing</h2>
+            <p class="desc short">
+              Transform your raw media into polished masterpieces. With advanced editing techniques, I enhance images ...
+            </p>
+            <p class="desc full">
+              Transform your raw media into polished masterpieces. With advanced editing techniques, I enhance images
+              and videos to match your vision—whether it's retouching, color grading, adding effects, or creating
+              dynamic sequences for social media or presentations.
+            </p>
+            <button class="toggle-btn-service" onclick="toggleText(this)">See more</button>
+          </div>
+
+          <div class="service">
+            <p class="p1">06</p>
+            <div class="separator"></div>
+            <h2>Photo Manipulation & Video Editing</h2>
+            <p class="desc short">
+              Learning something new? I offer personal tutoring in areas such as design, development, basic IT, and ...
+            </p>
+            <p class="desc full">
+              Learning something new? I offer personal tutoring in areas such as design, development, basic IT, and
+              media editing. My sessions are flexible and tailored to your learning style, perfect for beginners or
+              those looking to sharpen their skills with one-on-one guidance.
+            </p>
+            <button class="toggle-btn-service" onclick="toggleText(this)">See more</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section4 skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <!-- <p class="section-subtitle">My skills</p> -->
+
+          <h2 class="h3 section-title">Capabilities & Technologies</h2>
+
+          <p class="section-text">
+            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            and time
+            with those technologies.
+            <br><br><br>
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">TypeScript</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/typescript.png" alt="TypeScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">jQuery</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Angular</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/angular.png" alt="Angular logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vue</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/vue.png" alt="Vue logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PugJs</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/pugjs.png" alt="PugJs logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SASS</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/sass.png" alt="SASS logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Ajax</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/ajax.png" alt="Ajax logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Gulp</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/gulp.png" alt="Gulp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Webpack</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/webpack.png" alt="Webpack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Npm</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Trello</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/trello.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ClickUp</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/clickup.png" alt="ClickUp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Slack</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/slack.png" alt="Slack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/photoshop.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe XD</div>
+
+                <div class="card-icon">
+                  <img src="/assets/images/tools/adobe-xd.png" alt="Adobe XD logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="curtain"></div>
+
+      <div class="footer-info1">
+        <div class="footer-title">
+          <img src="assets/images/profile/profile.png" alt="Logo">
+          <p class="p1">Let's work</p>
+          <p>together</p>
+        </div>
+        <img class="arrow appear-ani-7" src="assets/images/right-arrow.png" alt="arrow">
+        <div class="get-in-touch-circle-container">
+          <button class="get-in-touch-circle">
+            <p class="p-get-in-touch">Get in touch</p>
+          </button>
+        </div>
+        <hr>
+        <div class="footer-contact">
+          <p>xcodesonic@gmail.com</p>
+          <p>+63 921 365 2361</p>
+        </div>
+      </div>
+
+      <div class="footer-info2">
+        <div class="info1">
+          <p>VERSION</p>
+          <p>LOCAL TIME</p>
+          <p>2025 &copy; Edition</p>
+          <p>GMT +8</p>
+        </div>
+        <div class="info2">
+          <div class="social-title">
+            <p>SOCIALS</p>
+          </div>
+          <div class="socials">
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>Telegram</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#section1">
+    <button id="floating-menu" >
+        <div class="icon">
+          <img src="/assets/images/icons/arrow-up.png" alt="">
+        </div>
+    
+    </button>
+  </a>
+  </body>
+
+</html>

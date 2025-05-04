@@ -1,0 +1,5 @@
+Landing page BG = #999d9e;
+action = #1c1d21;
+card bg = #dee0e0;
+get in touch = #3f49df;
+get in touch hover =#f10b64;

@@ -1,0 +1,162 @@
+.expertise-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-top: 5%;
+}
+
+.expertise-section .expertise {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 5%  10% 0 10%;
+}
+
+.expertise-section .expertise .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expertise-section .expertise .right{
+  display: flex;
+  flex-direction: column;
+}
+
+.expertise-section .expertise .right .about-me-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  align-self: flex-end;
+  margin: 20px 10% 0 0;
+ 
+}
+
+.expertise-section .expertise .right .about-me-circle-container .about-me-circle{
+  width: 180px;
+  height: 180px;
+  background-color: #1c1d21;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: none;
+  transition: transform 0.1s ease 0s;
+}
+
+.expertise-section .expertise .right .about-me-circle-container p{
+  display: block;
+  /* position: absolute; */
+  color: #ffffff;
+  z-index: 1;
+  /* transition: left 0.2s ease, top 0.12s ease;
+  transition-delay: 0; */
+  transition: transform 0.1s ease 0s;
+}
+
+
+.expertise-section .expertise p {
+  font-size: 1.5em;
+}
+
+.expertise-section .expertise .left .recent{
+  font-size: 1em;
+  color: #999d9e;
+}
+
+ .expertise-section .recent-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 5%  10% 0 10%;
+}
+
+
+.expertise-section .recent-project .right .img-container,
+.expertise-section .recent-project .left .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  padding: 5px;
+  background-color: #dee0e0;
+  overflow: hidden;
+}
+
+.expertise-section .recent-project .right img,
+.expertise-section .recent-project .left img {
+  width: 50%;
+}
+
+.expertise-section .recent-project .right h3,
+.expertise-section .recent-project .left h3 {
+  width: 50%;
+  margin: 2.5em 0 1em 0;
+}
+
+.expertise-section .recent-project .sub-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.expertise-section .more-work-btn {
+  padding: 1em 2em;
+  background-color: transparent;
+  border: 1px solid #999d9e;
+  border-radius: 20px;
+  /* width: 3em; */
+  margin: 10em 0 10em 0;
+  width: fit-content ;
+  align-self: center;
+  cursor: pointer;
+}
+
+.expertise-section .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0  10% 10% 10%;
+}
+
+.expertise-section .projects .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #dee0e0;
+  overflow: hidden;
+}
+
+.expertise-section .projects .img-container  img,
+.expertise-section .projects .img-container  img {
+  width: 50%;
+}
+
+.expertise-section .expertise .right .about-me-circle-container .about-me-circle::before {
+  content: '';
+  position: absolute;
+  top: var(--y); 
+  left: var(--x);
+  width: 0em; 
+  height: 0em;
+  background-color: #3f49df;
+  transition: width 0.5s, height 0.5s;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.expertise-section .expertise .right .about-me-circle-container .about-me-circle:hover::before {
+  width: 90%;
+  height: 90%;
+}
+
+
